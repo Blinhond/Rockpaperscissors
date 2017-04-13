@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto'); /*Roboto font from google fonts*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper{
+    width: 60%;
+    margin-left: 20%;
+}
+
+h1{
+    text-align: center;
+}
+
+#points{
+    text-align: center;
+}
+
+#bot_choice{
+    width: 120px;
+    height: 100px;
+}
+
+#outcome{
+    border: solid 1px;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    background: lightgrey;
+    padding: 10px;
+}
+
+#buttons{
+    padding-top: 20px;
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+button img{
+    width: 120px;
+    height: 100px;
+}
+
+button:hover{
+    background: grey;
+    transition-delay: 25ms;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    color: grey;
+}
