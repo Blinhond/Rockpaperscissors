@@ -90,6 +90,16 @@ function print_points(){
     $("#points").html("Player points: " + player_points + " - Bot points: " + bot_points);
 }
 
+function print_winner(winner) {
+    var winner_element = $("#winner");
+    if(winner === "player")
+        winner_element.attr("class", "win").html("Player won");
+    else if(winner === "bot")
+        winner_element.attr("class", "lose").html("Bot won");
+    else // If winner = EVEN
+        winner_element.attr("class", "even").html("Even");
+}
+
 // Reset the game
 function reset(){
     player_points = 0;
@@ -102,6 +112,7 @@ $(document).ready(function () {
     print_points();
     $(".choice").click(function () {
         var winner = return_winner($(this).attr("id"));
+        print_winner(winner);
         distribute_points(winner);
         print_points();
     });

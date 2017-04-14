@@ -35,6 +35,22 @@ h1{
     text-align: center;
 }
 
+#winner{
+    text-align: center;
+}
+
+.win{
+    color: green;
+}
+
+.lose{
+    color: red;
+}
+
+.even{
+    color: orange;
+}
+
 button{
     cursor: pointer;
 }
@@ -47,6 +63,7 @@ button img{
 button:hover{
     background: grey;
     transition-delay: 25ms;
+    color: lightgray;
 }
 
 footer {
